@@ -40,7 +40,10 @@ fruit_classifier_cnn/
 
 ## 🚀 Quick Start
 
+▶️ [Live Demo](https://fruitclassifiercnn.streamlit.app/)
+
 ### Prerequisites
+
 - Python 3.7 or higher
 - pip package manager
 
@@ -63,31 +66,34 @@ fruit_classifier_cnn/
    ```
 
 4. **Access the web interface**
-   - Open your browser and navigate to `http://localhost:8501`
+   - Open your browser and navigate to http://localhost:8501
    - Upload a fruit image and get instant freshness classification!
 
 ## 📊 Model Performance
 
 ### Custom CNN Model (task.ipynb)
+
 - **Architecture**: 2 Convolutional layers with MaxPooling, Dense layers
 - **Input Size**: 256x256 pixels
-- **Training Results**: 
+- **Training Results**:
   - Final Training Accuracy: ~95.7%
   - Final Validation Accuracy: ~82.2%
   - Training completed in 10 epochs
 
 ### Transfer Learning Model (transfer.ipynb)
+
 - **Base Model**: ResNet50 pre-trained on ImageNet
 - **Input Size**: 224x224 pixels (ResNet50 standard)
 - **Training Results**:
   - Final Training Accuracy: ~99.5%
   - Final Validation Accuracy: ~99.8%
   - Training completed in just 3 epochs
-  - **Superior performance with faster training**
+  - Superior performance with faster training
 
 ## 🛠️ Technical Implementation
 
 ### Custom CNN Architecture
+
 - Rescaling layer (normalization)
 - Conv2D (32 filters, 3x3 kernel) + ReLU
 - MaxPooling2D
@@ -98,6 +104,7 @@ fruit_classifier_cnn/
 - Dense (16 classes) + Softmax
 
 ### Transfer Learning Architecture
+
 - ResNet50 base (frozen weights)
 - GlobalAveragePooling2D
 - Dense (128 neurons) + ReLU
@@ -105,6 +112,7 @@ fruit_classifier_cnn/
 - Dense (16 classes) + Softmax
 
 ### Dataset Information
+
 - **Total Images**: 16,000
 - **Classes**: 16 (8 fruits × 2 conditions)
 - **Training Split**: 80% (12,800 images)
@@ -113,11 +121,12 @@ fruit_classifier_cnn/
 
 ## 🖼️ Web Application Features
 
-The Streamlit app (`app.py`) provides:
+The Streamlit app (app.py) provides:
+
 - **User-friendly Interface**: Clean, colorful design
 - **Image Upload**: Support for JPG, JPEG, PNG formats
 - **Real-time Prediction**: Instant classification results
-- **Visual Feedback**: 
+- **Visual Feedback**:
   - Green success message for fresh fruits
   - Red error message for spoiled fruits
 - **Supported Fruits Display**: Clear list of compatible fruit types
@@ -125,23 +134,24 @@ The Streamlit app (`app.py`) provides:
 
 ## 📋 Dependencies
 
-- `streamlit`: Web application framework
-- `tensorflow`: Deep learning framework
-- `keras`: High-level neural network API
-- `pillow`: Image processing library
-- `numpy`: Numerical computing library
+- **streamlit**: Web application framework
+- **tensorflow**: Deep learning framework
+- **keras**: High-level neural network API
+- **pillow**: Image processing library
+- **numpy**: Numerical computing library
 
 ## 🎯 Usage Examples
 
 1. **Web Application**: Upload any image of the supported fruits
-2. **Jupyter Notebooks**: 
-   - `task.ipynb`: Train your own custom CNN
-   - `transfer.ipynb`: Implement transfer learning with ResNet50
+2. **Jupyter Notebooks**:
+   - task.ipynb: Train your own custom CNN
+   - transfer.ipynb: Implement transfer learning with ResNet50
 
 ## 🔬 Model Training
 
 ### To train the custom CNN:
-```python
+
+```bash
 # Open and run task.ipynb
 # The notebook includes:
 # - Data loading and preprocessing
@@ -151,7 +161,8 @@ The Streamlit app (`app.py`) provides:
 ```
 
 ### To train with transfer learning:
-```python
+
+```bash
 # Open and run transfer.ipynb
 # The notebook includes:
 # - ResNet50 base model loading
@@ -163,6 +174,7 @@ The Streamlit app (`app.py`) provides:
 ## 🎨 Supported Fruit Types
 
 The model can classify the freshness of these fruits:
+
 - 🍌 **Banana**
 - 🍋 **Lemon**
 - 🫒 **Lulo**
@@ -210,5 +222,4 @@ This project is open source and available under the [MIT License](LICENSE).
 - The open-source community for inspiration and resources
 
 ---
-
 **Made with ❤️ using TensorFlow, Keras, and Streamlit**
