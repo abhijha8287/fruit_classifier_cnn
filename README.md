@@ -8,7 +8,7 @@ Built during the AtliQ Technologies virtual data science internship (Dec 2025 - 
 ## What it does
 - Trains a custom CNN (`task.ipynb`) and a ResNet50 transfer-learning model (`transfer.ipynb`)
 - Predicts 16 classes: fresh or spoiled banana, lemon, lulo, mango, orange, strawberry, tamarillo and tomato
-- ResNet50 reached 99.8% validation accuracy and is saved as `fruit_classifier_resnet50.keras`
+- ResNet50 reached 97.8% validation accuracy and is saved as `fruit_classifier_resnet50.keras`
 - `app.py` lets you upload a photo and shows the predicted class and confidence
 
 ## Project structure
